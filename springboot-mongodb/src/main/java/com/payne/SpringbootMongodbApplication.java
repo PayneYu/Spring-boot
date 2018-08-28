@@ -20,7 +20,7 @@ public class SpringbootMongodbApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		userRepository.deleteAll();
+		//userRepository.deleteAll();
 
         // save a couple of customers
 		User user = new User();

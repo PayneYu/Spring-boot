@@ -1,5 +1,7 @@
 package com.payne.entity;
 
+import java.util.Date;
+
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.data.annotation.Id;
 
@@ -15,6 +17,9 @@ public class User {
 	private String sex;
 
 	private Integer age;
+	
+	private Date borthDate;
+	
 
 	public String getId() {
 		return id;
@@ -54,6 +59,14 @@ public class User {
 
 	public void setAge(Integer age) {
 		this.age = age;
+	}
+
+	public Date getBorthDate() {
+		return borthDate;
+	}
+
+	public void setBorthDate(Date borthDate) {
+		this.borthDate = borthDate;
 	}
 
 	@Override
